@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПАМЕТЕН ДОМ</title>
+</head>
+<body>
+    <header>
+        <h1>Pameten dom</h1>
+        <a href="#spalna">Spalna</a>
+        <a href="#kujna">Kujna</a>
+        <a href="#gradina">Gradina</a>
+        <a href="#dnevna">Dnevna</a>
+        <a href="#notifikacii">Notifikacii</a>
+    </header>
+        <section id="spalna">
+            <h2>Spalna</h2>
+            <h3>Temperatura</h3>
+            <p>Vrednost: <input type="number" value="22"></p>
+            <p>Vklucen: <input type="checkbox" checked></p>
+            <p>Baterija: <input type="range" min="0" max="100" value="80"></p>
+            <h3>Vlaznost</h3>
+                <table border="1">
+                    <tr>
+                        <th>Vrednost</th>
+                        <th>Vklucen</th>
+                        <th>Baterija</th>
+                    </tr>
+                    <tr>
+                        <td>45%</td>
+                        <td>Da</td>
+                        <td>60%</td>
+                    </tr>
+                </table>
+            <h3>Svetlina</h3>
+            <ul>
+                <li>Vrednost: niska</li>
+                <li>Vklucen: Ne</li>
+                <li>Baterija: 15%</li>
+            </ul>
+        </section>
+                <section id="kujna">
+            <h2>Kujna</h2>
+            <h3>Temperatura</h3>
+            <p>Vrednost: <input type="number" value="23"></p>
+            <p>Vklucen: <input type="checkbox" checked></p>
+            <p>Baterija: <input type="range" min="0" max="100" value="65"></p>
+            <h3>Dim</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Vklucen</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>Nema dim</td>
+                    <td>Da</td>
+                    <td>90%</td>
+                </tr>
+            </table>
+            <h3>Gas</h3>
+            <ul>
+                <li>Vrednost: normalno</li>
+                <li>Vklucen: Da</li>
+                <li>Baterija: 55%</li>
+            </ul>
+        </section>
+        <section id="gradina">
+            <h2>Gradina</h2>
+            <h3>Vlaznost na pocva</h3>
+            <p>Vrednost: <input type="number" value="35"> %</p>
+            <p>Vklucen: <input type="checkbox" checked></p>
+            <p>Baterija: <input type="range" min="0" max="100" value="40"></p>
+            <h3>Dvizenje</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Vklucen</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>Nema dvizenje</td>
+                    <td>Ne</td>
+                    <td>12%</td>
+                </tr>
+            </table>
+            <h3>Svetlina</h3>
+            <ul>
+                <li>Vrednost: visoka</li>
+                <li>Vklucen: Da</li>
+                <li>Baterija: 70%</li>
+            </ul>
+        </section>
+        <section id="dnevna">
+            <h2>Dnevna</h2>
+            <h3>Temperatura</h3>
+            <p>Vrednost: <input type="number" value="27"> °C</p>
+            <p>Vklucen: <input type="checkbox" checked></p>
+            <p>Baterija: <input type="range" min="0" max="100" value="85"></p>
+            <h3>Vlaznost</h3>
+            <table border="1">
+                <tr>
+                    <th>Vrednost</th>
+                    <th>Vklucen</th>
+                    <th>Baterija</th>
+                </tr>
+                <tr>
+                    <td>50%</td>
+                    <td>Da</td>
+                    <td>70%</td>
+                </tr>
+            </table>
+            <h3>Svetlina</h3>
+            <ul>
+                <li>Vrednost: srednja</li>
+                <li>Vklucen: Da</li>
+                <li>Baterija: 60%</li>
+            </ul>
+        </section>
+        <section id="notifikacii">
+        <h2>Notifikacii</h2>
+        <details>
+            <summary>Dnevna: temperatura</summary>
+            <p>Temperaturata e 27 stepeni, nadvor od dozvolenata zona.</p>
+        </details>
+        <details>
+            <summary>Gradina: baterija</summary>
+            <p>Senzorot za dvizenje ima 12% baterija, nisko nivo.</p>
+        </details>
+        <details>
+            <summary>Kujna: temperatura</summary>
+            <p>Temperaturata e 23 stepeni, se naoga vo dozvolenata granica</p>
+        </details>
+        <details>
+            <summary>Spalna: vlaznost</summary>
+            <p>Vlaznosta e 45%, se naoga vo opsegot na dozvoleni vrednosti</p>
+        </details>
+        </section>
+</body>
+</html>
